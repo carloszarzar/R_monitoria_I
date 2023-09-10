@@ -39,5 +39,10 @@ names <- c("Carlos","Gabriel","Daniel","Luan","Roberta")
 vec3 <- sample(names,size = 10,replace = TRUE)
 
 #------------------------------------------------
+# Criar exercícios para os alunos acessar os elementos dos vetores 
+# Criados anterior mente
+## Exemplo do que eu estou falando
+vec3[2] # aqui eles estao aprendendo como acessar o segundo elemento do vec3
+# Continuem com esses exercício de vetores
 
 
