@@ -10,6 +10,7 @@ Esse repositório está estruturado da seguinte forma: os arquivos do projeto RS
 As branch do repositõrio estão organiza da seguinte forma: branc luan, daniel, gabriel, são branch relacionadas aos seus arquivos pessoasis de monitoria (suas pastar respectivamente). Branch ex_vec, ex_matrix, ex_array, ex_dataframe, ex_list, ex_loop, ex_data, ex_func, são branch relacionada ao desenvolvimento dos exercícios para cada assunto da monitoria.
 
 ### Branchs
+ˋˋˋ
 ex_vec - exercícios relacionado ao conteúdo vetores
 ex_matrix - exercícios relacionado ao conteúdo matrizes 
 ex_array - exercícios relacionado ao conteúdo arrays
@@ -21,7 +22,7 @@ ex_func - exercícios relacionado ao conteúdo criação de função
 luan - Arquivos monitor Luan
 daniel - Arquivos monitor Daniel
 gabriel - Arquivos monitor Gabriel
-
+ˋˋˋ
 ## Dados institucional
 Professor responsável: Carlos Antônio Zarzar
 Monitor: Luan, Daniel, Gabriel.
