@@ -39,10 +39,19 @@ names <- c("Carlos","Gabriel","Daniel","Luan","Roberta")
 vec3 <- sample(names,size = 10,replace = TRUE)
 
 #------------------------------------------------
-# Criar exercícios para os alunos acessar os elementos dos vetores 
-# Criados anterior mente
-## Exemplo do que eu estou falando
-vec3[2] # aqui eles estao aprendendo como acessar o segundo elemento do vec3
-# Continuem com esses exercício de vetores
+# Exercício vetores (Gabriel)
+## Acessar o elemento 3 do vetor (vec3)
+vec3[2]
 
+# Acessar o elemento 3 e 7 do vetor vec3
+vec3[c(3,7)]
 
+# Crie um vetor com os 5 primeiros números primos
+x<-c(2,3,5,7,11) #os 5 primeiros números primos
+x
+## exercícios criando vetores ##
+y<-c(x,13,17,19) #adicionando mais três números primos
+#------------------------------------------------
+
+# Gabriel
+# continuem ...
