@@ -8,9 +8,8 @@
 # Calculadora científica no R
 # Média
 # Mediana
-# Moda
 # Soma
-# 
+
 #Conceito de vetor;
 #Como criar um vetor?
 #Tipos de vetores;
@@ -39,7 +38,7 @@
 # OPERAÇÕES MATEMÁTICAS, LÓGICAS E DE COMPARAÇÃO, UTILIZANDO RECURSOS BÁSICOS 
 
 # soma
-5+5 
+5+5     
 
 # subtração
 10-8
