@@ -9,6 +9,7 @@
 
 for (i in 1:5) {
   cat(i, " ")
+ 
 }
 
 ###############################################################################
@@ -19,7 +20,7 @@ for (i in 1:5) {
 vetor <- c("maçã", "banana", "laranja", "uva", "abacaxi")
 
 for (fruta in vetor) {
-  cat(fruta, " ")
+  cat(fruta, "\n")
 }
 
 

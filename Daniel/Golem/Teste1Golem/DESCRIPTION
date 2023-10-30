@@ -1,0 +1,18 @@
+Package: Teste1Golem
+Title: 1º Dashboard no Shiny Golem
+Version: 0.0.0.9000
+Authors@R: person('Daniel', 'Siqueira', email = 'siqueiradaniel65@gmail.com', role = c('cre', 'aut'))
+Description: Primeiro aplicativo para a criação de gráficos.
+License: MIT + file LICENSE
+Imports: 
+    config (>= 0.3.2),
+    golem (>= 0.4.1),
+    shiny (>= 1.7.5),
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Suggests: 
+    spelling,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Language: en-US
