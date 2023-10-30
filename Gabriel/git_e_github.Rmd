@@ -1,0 +1,106 @@
+---
+title: "Git e Github (RMarkdown)"
+author: "Gabriel Rodrigues da Silva"
+date: "2023-10-30"
+output:
+  word_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Git e Github
+### O que é Git?
+Git é um sistema de controle de versão distribuído amplamente utilizado no desenvolvimento de software. Ele foi criado por Linus Torvalds em 2005 e é de código aberto. O Git permite que você acompanhe as alterações em seus arquivos e diretórios ao longo do tempo. Ele ajuda a gerenciar e controlar as diferentes versões de um projeto.
+Os principais conceitos do Git incluem: repositórios (locais e remotos), commits (pontos de verificação de alterações), branches (ramificações para trabalhar em diferentes recursos) e merges (fusão de alterações de diferentes branches).
+
+## O que é Github?
+GitHub é uma plataforma de hospedagem de código-fonte baseada na web que utiliza o Git como seu sistema de controle de versão subjacente.
+No GitHub, você pode hospedar seus repositórios Git de forma gratuita ou privada, compartilhá-los com outras pessoas e colaborar em projetos de código-fonte aberto. Ele fornece recursos de colaboração, como rastreamento de problemas, solicitações de pull (pull requests) para mesclar contribuições de outros desenvolvedores e integração contínua para automatizar testes e implantação.
+
+O uso do Git e do GitHub simplifica o desenvolvimento de software, melhora a colaboração entre desenvolvedores, fornece controle de versão confiável e promove a transparência no desenvolvimento de projetos de software, tornando-os essenciais em muitos cenários de desenvolvimento de software.
+
+## Instalando o Git no seu computador
+### Windows
+Você pode baixar o Git para Windows em <gitforwindows.org>.
+Após o download, execute o instalador e siga as instruções. O instalador padrão deve ser suficiente para a maioria dos casos.
+
+### Linux
+A maioria das distribuições Linux já inclui o Git. Você pode instalar o Git usando o gerenciador de pacotes da sua distribuição. Por exemplo:
+No Ubuntu ou Debian, use 'sudo apt-get install git'.
+No Fedora, use 'sudo dnf install git'.
+
+Após a instalação, abra o Terminal ou Prompt de Comando (dependendo do seu sistema operacional) e digite 'git --version' para verificar se o Git foi instalado com sucesso.
+
+## Criando uma conta no GitHub
+1. Abra um navegador da web e vá para a página inicial do GitHub em <github.com>.
+2. Clique em "Sign up" (Inscrever-se) no canto superior direito da página.
+3. Preencha o formulário de inscrição com suas informações, incluindo nome de usuário, endereço de e-mail e senha. Escolha um nome de usuário exclusivo, pois ele será parte do URL do seu perfil do GitHub.
+4. Clique em "Create account" (Criar conta).
+5. Você pode escolher um plano (Gratuito para projetos de código aberto e Pro para projetos privados), ou continuar com o plano gratuito.
+6. Você pode optar por responder a algumas perguntas para ajudar o GitHub a personalizar sua experiência, ou pular essa etapa.
+7. Verifique seu endereço de e-mail, pois o GitHub pode enviar um e-mail de verificação.
+
+Após criar sua conta no GitHub, você estará pronto para começar a usar o Git para gerenciar seus projetos e colaborar com outros desenvolvedores na plataforma. Lembre-se de configurar o Git com suas informações de usuário após a instalação, incluindo nome de usuário e endereço de e-mail, usando os comandos 'git config' que explicarei na próxima seção. Isso é importante para que suas contribuições nos repositórios do GitHub sejam atribuídas corretamente a você.
+
+### Usando os comandos *'git config'*
+Para configurar o Git com o Github, abra no seu Terminal ou prompt de Comando e utilize os comandos:
+1. Nome de usuário: Digite o comando *'git config --global user.name "seu nome de usuário"'*.
+2. E-mail: Digite *'git config --global user.email "seu email"'*.
+
+Ao executar git 'config --list', você verá uma lista de todas as configurações configuradas no Git, incluindo configurações como seu nome de usuário, endereço de e-mail, configurações de alias e muitas outras opções de configuração do Git. Essa lista pode ser útil para verificar as configurações atuais e garantir que tudo esteja configurado conforme o esperado.
+
+### Repositório (Repository)
+Um repositório é um local onde o Git armazena os arquivos e o histórico de um projeto. Pode ser local (no seu computador) ou remoto (em uma plataforma como o GitHub). É onde todos os dados do seu projeto são armazenados.
+
+### Clone (Clonar)
+O comando 'git clone' é usado para criar uma cópia local de um repositório remoto. Exemplo: *'git clone https://github.com/seu-usuario/seu-repositorio.git'*.
+
+### Branch (ramo)
+Um branch é uma linha de desenvolvimento separada dentro de um repositório Git. Ele permite que você trabalhe em novos recursos ou correções de bugs sem afetar a versão principal do projeto. Branches podem ser criados, alternados e mesclados.
+Criar um novo branch: *'git branch nome-do-branch'*.
+
+### Pull (Puxar)
+O comando *'git pull'* é usado para trazer as alterações do repositório remoto para o repositório local. Ele é geralmente usado para **atualizar seu repositório** local com as alterações feitas por outros colaboradores.
+
+### Commit (Confirmação)
+Um commit é um ponto de verificação no histórico do Git que representa uma alteração ou conjunto de alterações em seus arquivos. Commits são usados para registrar o progresso do projeto e são acompanhados por mensagens usando o comando *'git -m commit "sua mensagem"'*.
+
+### Push (Empurrar)
+O comando *'git push'* é usado para enviar as alterações que você cometeu localmente para o repositório remoto. Isso permite que outras pessoas vejam e acessem suas alterações.
+
+### Merge (Mesglar)
+Merging é o processo de combinar duas ou mais branches do Git para incorporar as alterações de uma branch em outra. É usado para unir o trabalho de diferentes ramos em um único fluxo de desenvolvimento.
+Para mesclar um branch em outro: Primeiro, vá para o branch de destino (exemplo: *'git checkout branch-de-destino'*), e então: *'git merge branch-a-ser-mesclado'*.
+
+### Fork (Bifurcar)
+Um fork é uma cópia do repositório de outra pessoa em sua própria conta do GitHub.
+No GitHub, você pode criar um fork do projeto clicando no botão "Fork" no canto superior direito da página do repositório.
+
+
+### Pull request (Solicitação de puxar)
+Um pull request (solicitação de puxar), é uma solicitação para mesclar as alterações de um branch em outro, geralmente de um fork para o repositório original. É uma forma de colaboração no GitHub, permitindo que os colaboradores discutam e revisem as alterações antes de serem mescladas.
+
+### Status (Estado)
+O comando *'git status'* é usado para verificar o estado atual do seu repositório. Ele exibe informações sobre quais arquivos foram modificados, adicionados ou excluídos e se você está em uma branch específica.
+
+### Checkout (Confira)
+O comando *'git checkout'* é usado para alternar entre branches ou para criar um novo branch. Ele também pode ser usado para descartar alterações não comitadas em um arquivo.
+
+Lembre-se de que esses são apenas comandos básicos, e cada um deles possui várias opções e casos de uso mais avançados. O Git é uma ferramenta poderosa, e você pode explorar mais detalhes e recursos à medida que se familiariza com ele. Certifique-se de estar dentro do diretório do repositório ao executar esses comandos.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
